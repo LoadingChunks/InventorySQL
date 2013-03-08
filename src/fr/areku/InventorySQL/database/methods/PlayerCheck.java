@@ -360,7 +360,7 @@ public class PlayerCheck extends SQLMethod {
 				String w = q
 						+ " (`inventories`.`owner` IN ("
 						+ all
-						+ "0) AND `inventories`.`date` != ? AND `inventories`.`world` = ?)";
+						+ "0) AND `inventories`.`date` != ?";
 
 				try {
 					PreparedStatement sth = getConn().prepareStatement(w);
